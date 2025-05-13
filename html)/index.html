@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pera Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>𝓟𝓮𝓻𝓪 𝓢𝓱𝓸𝓹</h1>
+    <p>"𝓗𝓮𝓻 𝓲𝓵𝓶𝓮𝓴𝓽𝓮 𝓮𝓶𝓮𝓴 𝓿𝓪𝓻...</p>
+    <nav class="top-nav">
+    <ul>
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <section class="products">
+    <h2>Ürünlerimiz</h2>
+    <div class="product-grid">
+      
+      <!-- Ürün 1 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2487.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2541.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Yeşil Cep Detaylı Kanvas Çanta</h3>
+        <p>Doğal dokusu ve kontrast detaylarıyla öne çıkan bu bez çanta, hem stil hem pratiklik arayanlar için tasarlandı. Yan kısmındaki geniş cep sayesinde su şişenizi, termosunuzu ya da kolay ulaşmak istediğiniz eşyalarınızı rahatça taşıyabilirsiniz. İç kısmında yer alan cep küçük eşyalarınızı düzenli tutarken, cırt cırtlı kapağı çantanızın güvenliğini sağlar.</p>
+        <strong>300 TL</strong>
+        <button onclick="addToCart('Yeşil Cep Detaylı Kanvas Çanta', 300)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 2 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2463.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2469.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Çima Dikişli Kanvas Çanta</h3>
+        <p>Günlük kullanım için ideal olan bu minimalist tasarımlı doğal kumaş çanta, hem şık hem de işlevsel. Mıknatıslı kapanışı sayesinde eşyalarınız güvende kalırken, iç kısmındaki pratik cep sayesinde anahtar, telefon gibi küçük eşyalarınızı kolayca bulabilirsiniz. Sağlam yapısı ve geniş iç hacmiyle her an yanınızda taşıyabileceğiniz harika bir tamamlayıcı.</p>
+        <strong>320 TL</strong>
+        <button onclick="addToCart('Çima Dikişli Kanvas Çanta', 320)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 3 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2549.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2480.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Mini Kanvas Çanta</h3>
+        <p>Ön cepli tasarımıyla kullanışlı, geniş iç hacmiyle pratik bir tercih. Doğal kumaşı ve sade görünümüyle her stile uyum sağlayan bu günlük bez çanta, dayanıklı yapısı ve hafifliğiyle günlük kullanımda rahatlık sunuyor. Çevre dostu özellikleriyle sürdürülebilir bir yaşam tarzını benimseyenler için ideal.
+        </p>
+        <strong>230 TL</strong>
+        <button onclick="addToCart('Mini Kanvas Çanta', 230)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 4 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2523.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2521.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Siyah Omuz ve El Çantası</h3>
+        <p>Doğal keten astarlı, çift bölmeli tasarımıyla hem şık hem  de fonksiyonel bir çanta arıyorsanız, bu siyah kanvas omuz ve el çantası tam size göre! Sağlam dokuma askıları sayesinde elde ya da omuzda rahatça taşınabilir. İç kısmında yer alan geniş cepler, eşyalarınızı düzenli tutmanızı sağlar. Günlük kullanıma ve kısa seyehatlere uygundur.</p>
+        <strong>350 TL</strong>
+        <button onclick="addToCart('Siyah Omuz ve El Çantası', 350)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 5 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2507.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2509.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Yuvarlak Kesim Bez Çanta</h3>
+        <p>Zarif yuvarlak kesimiyle dikkat çeken bu bez çanta, doğal tonları ve sade tarzıyla her kombine uyum sağlar. Ön kısmındaki geniş cep pratik kullanım sunarken, cırt cırtlı kapanışıyla eşyalarınızı güvenle taşıyabilirsiniz. Hafif yapısıyla günlük kullanım için ideal, her an yanınızda taşımak isteyeceğiniz bir parça.</p>
+        <strong>250 TL</strong>
+        <button onclick="addToCart('Yuvarlak Kesim Bez Çanta', 250)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 6 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2498.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2497.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Haki Yeşili Bez Çanta</h3>
+        <p>Dayanıklı pamuk kumaşı ve sade tasarımıyla her anınıza eşlik edecek, doğa dostu haki tote çanta, geniş iç hacmi ve pratik kullanım kolaylığıyla günlük hayatın vazgeçilmezi. Hem şık hem de çevre dostu, sürdürülebilir bir tercih.</p>
+        <strong>180 TL</strong>
+        <button onclick="addToCart('Haki Yeşili Çanta', 180)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 7 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2503.JPG.JPG" alt="Foto 1">
+            <img src="images/IMG_2504.JPG.JPG" alt="Foto 2">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Kanvas Bez Çanta</h3>
+        <p>Doğal dokusu ve ön cepli tasarımıyla öne çıkan bu bez çanta, günlük kullanım için hem sade hem işlevsel bir seçenek. Hafif, şık ve çevre dostu.</p>
+        <strong>200 TL</strong>
+        <button onclick="addToCart('Kanvas Bez Çanta', 200)">Sepete Ekle</button>
+      </div>
+
+      <!-- Ürün 8 -->
+      <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2553.JPG.JPG" alt="Foto 1">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>V Model Kanvas Çanta</h3>
+        <p>Minimal tasarımıyla öne çıkan çanta, günlük kullanıma uygun hafif yapısıyla hem şık hem de pratiktir.</p>
+        <strong>220 TL</strong>
+        <button onclick="addToCart('V Model Kanvas Çanta', 220)">Sepete Ekle</button>
+      </div>
+
+       <!-- Ürün 9 -->
+       <div class="product">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/IMG_2556.JPG.JPG" alt="Foto 1">
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(this, -1)">❮</button>
+          <button class="carousel-btn next" onclick="moveSlide(this, 1)">❯</button>
+        </div>
+        <h3>Siyah Kanvas Çanta</h3>
+        <p>Doğal dokusu ve ön cepli tasarımıyla öne çıkan bu bez çanta, günlük kullanım için hem sade hem işlevsel bir seçenek. Hafif, şık ve çevre dostu.</p>
+        <strong>200 TL</strong>
+        <button onclick="addToCart('Siyah Kanvas Çanta', 200)">Sepete Ekle</button>
+      </div>
+
+      <!-- Diğer ürünler aynı şekilde buraya eklenebilir -->
+      
+    </div>
+  </section>
+
+  <section class="cart-section">
+    <h2>🛒 Alışveriş Sepeti</h2>
+    <ul id="cart"></ul>
+    <p><strong>Toplam: </strong><span id="total">0</span> TL</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Insatgaram Peraashopp</p>
+  </footer>
+</body>
+</html>
+
+
+<!-- Sepeti Onayla Butonu -->
+<div style="text-align: center; margin-top: 20px;">
+  <button onclick="openCheckout()" class="checkout-button">Sepeti Onayla</button>
+</div>
+
+<!-- Sepet Onay Modalı -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeCheckout()">&times;</span>
+    
+    <!-- Adım 1: Kullanıcı Bilgileri -->
+    <div class="checkout-step step1">
+      <h3>Kullanıcı Bilgileri</h3>
+      <input type="text" placeholder="Ad" id="firstName" required>
+      <input type="text" placeholder="Soyad" id="lastName" required>
+      <input type="text" placeholder="Adres" id="address" required>
+      <input type="text" placeholder="Telefon" id="phone" required>
+      <input type="email" placeholder="E-posta" id="email" required>
+      <button onclick="nextStep()">Devam Et</button>
+    </div>
+
+    <!-- Adım 2: Kart Bilgileri -->
+    <div class="checkout-step step2" style="display: none;">
+      <h3>Ödeme Bilgileri</h3>
+      <input type="text" placeholder="Kart Sahibinin Adı Soyadı" id="cardName" required>
+      <input type="text" placeholder="Kart Numarası" id="cardNumber" required>
+      <input type="text" placeholder="CVV" id="cvv" required>
+      <button onclick="nextStep()">Ödeme Yap</button>
+    </div>
+
+    <!-- Adım 3: Onay -->
+    <div class="checkout-step step3" style="display: none; text-align: center;">
+      <h3>✔ Siparişiniz Onaylandı!</h3>
+      <p>Teşekkür ederiz, siparişiniz başarıyla alınmıştır.</p>
+    </div>
+  </div>
+</div>
+<section id="hakkimizda">
+  <h2>Hakkımızda</h2>
+  <p>Pera Shop, el emeğiyle üretilmiş doğal bez çantaları sizlerle buluşturur...</p>
+</section>
+
+<section id="hizmetler">
+  <h2>Hizmetler</h2>
+  <p>Kişiye özel tasarım, hızlı kargo ve memnuniyet garantisi sunuyoruz.</p>
+</section>
+
+<section id="iletisim">
+  <h2>İletişim</h2>
+  <p>Bize Instagram'dan veya e-posta yoluyla ulaşabilirsiniz: perashop@example.com</p>
+</section>
